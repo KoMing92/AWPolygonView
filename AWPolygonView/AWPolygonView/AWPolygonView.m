@@ -188,7 +188,7 @@
         [self.bezierPath setLineWidth:1];
     }
     self.shapeLayer.strokeColor = self.lineColor.CGColor;
-
+    self.shapeLayer.fillColor = [UIColor clearColor].CGColor;
 
 }
 
@@ -245,7 +245,7 @@
     if (!_valuePath) {
         _valuePath = [UIBezierPath bezierPath];
     }
-    return _bezierPath;
+    return _valuePath;
 }
 
 #pragma mark - Animation
